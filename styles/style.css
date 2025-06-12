@@ -194,7 +194,17 @@ nav img {
   border-radius: 20px;
 }
 
-.search img {
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-wrapper img {
+  width: 1rem;
+  position: absolute;
+  transform: translateX(-80%);
 }
 
 .sidebar-list {
