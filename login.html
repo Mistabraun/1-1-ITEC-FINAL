@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/auth.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="wrapper">
+        <div class="spinner"></div>
+        <h1 class="zetta">LOADING</h1>
+      </div>
+    </div>
+
+    <header>
+      <nav id="navigation nav-black">
+        <div class="nav-menu nav-black">
+          <button class="nav-button" id="sidebar-open">
+            <img src="assets/logo/menu.svg" alt="" style="color: wheat" />
+          </button>
+        </div>
+
+        <h1 class="nav-title nav-black zetta"><a href="/">ACMO</a></h1>
+
+        <ul class="nav-links nav-black">
+          <li>
+            <a href="/login.html"><img src="assets/logo/user.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/logo/heart.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/logo/shop.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-bg" id="sidebar-bg"></div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <button id="sidebar-close"><img src="assets/logo/exit.svg" alt="" /></button>
+          <input class="search" type="text" placeholder="SEARCH" />
+        </div>
+
+        <ul class="sidebar-list">
+          <li><a href="">NEW ARRIVALS</a></li>
+          <li><a href="">TOPS</a></li>
+          <li><a href="">JACKET</a></li>
+          <li><a href="">BOTTOMS</a></li>
+          <li><a href="">ACCESSORIES</a></li>
+          <li><a href="">FOOTWEAR</a></li>
+          <li><a href="" class="last">VIEW ALL</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="login">
+        <div class="form-main">
+          <h2 class="form-titlle zetta">ACCOUNT <br />LOGIN</h2>
+          <div class="form-header">
+            <div class="login-alternative">
+              <button class="exa">Google</button>
+              <button class="exa">Facebook</button>
+            </div>
+            <div class="or deca"><span>OR</span></div>
+          </div>
+
+          <form action="" class="form-body" id="login-form" autocomplete="off">
+            <div class="form-input">
+              <input class="exa" type="email" id="email" name="email" placeholder="EMAIL ADDRESS" />
+              <input class="exa" type="password" id="password" name="password" placeholder="PASSWORD" />
+              <span class="error" id="error">The password you’ve entered is incorrect.</span>
+              <a class="exa" href="" style="color: black; text-decoration: underline">Forgot your password?</a>
+            </div>
+            <button class="exa" type="submit">LOGIN</button>
+          </form>
+          <div class="form-footer exa">
+            <h6>
+              Don't have an account? <a href="register.html" style="color: rgba(0, 0, 0, 50%); text-decoration: underline">Sign up</a>
+            </h6>
+          </div>
+        </div>
+        <img src="assets/images/adele-shafiee-iFCccPqshcc-unsplash.jpg" alt="" />
+      </section>
+    </main>
+  </body>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/auth.js"></script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/loader.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="wrapper">
+        <div class="spinner"></div>
+        <h1 class="zetta">LOADING</h1>
+      </div>
+    </div>
+
+    <div class="loader" id="loader">
+      <div class="wrapper">
+        <div class="spinner"></div>
+        <h1 class="zetta">LOADING</h1>
+      </div>
+    </div>
+
+    <header>
+      <nav id="navigation">
+        <div class="nav-menu">
+          <button class="nav-button" id="sidebar-open">
+            <img src="assets/logo/menu.svg" alt="" style="color: wheat" />
+          </button>
+        </div>
+
+        <h1 class="nav-title zetta"><a href="">ACMO</a></h1>
+
+        <ul class="nav-links">
+          <li>
+            <a href="/login.html"><img src="assets/logo/user.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/logo/heart.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/logo/shop.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-bg" id="sidebar-bg"></div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <button id="sidebar-close"><img src="assets/logo/exit.svg" alt="" /></button>
+          <input class="search" type="text" placeholder="SEARCH" />
+        </div>
+
+        <ul class="sidebar-list">
+          <li><a href="">NEW ARRIVALS</a></li>
+          <li><a href="">TOPS</a></li>
+          <li><a href="">JACKET</a></li>
+          <li><a href="">BOTTOMS</a></li>
+          <li><a href="">ACCESSORIES</a></li>
+          <li><a href="">FOOTWEAR</a></li>
+          <li><a href="" class="last">VIEW ALL</a></li>
+        </ul>
+      </div>
+
+      <!-- 
+      <div class="sidebar-bg">
+        <div class="sidebar">
+          
+        </div>
+      </div> -->
+
+      <!-- <div class="sidebar" id="sidebar">
+        <div class="sidebar-header sidebar-bg" id="sidebar-bg">
+          <button id="sidebar-open"><img src="assets/logo/exit.svg" alt="" /></button>
+          <input class="search" type="text" placeholder="SEARCH" />
+        </div>
+        <ul class="sidebar-list sidebar-bg" id="sidebar-bg">
+          <li><a href="">NEW ARRIVALS</a></li>
+          <li><a href="">TOPS</a></li>
+          <li><a href="">JACKET</a></li>
+          <li><a href="">BOTTOMS</a></li>
+          <li><a href="">ACCESSORIES</a></li>
+          <li><a href="">FOOTWEAR</a></li>
+          <li><a href="" class="last">VIEW ALL</a></li>
+        </ul>
+      </div> -->
+    </header>
+
+    <main>
+      <!-- img-section naming sucks -->
+      <section class="img-section">
+        <img class="img-1" src="assets/images/sasha-lebedeva-VwGcsgeM-YM-unsplash.png" alt="" />
+
+        <div class="shop-1">
+          <a class="zetta" href="/shop.html">SHOP NOW</a>
+          <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="img-section-2">
+        <a href="/shop.html" class="card-section">
+          <img src="assets/images/reynier-carl-87m1_NfKld4-unsplash.jpg" alt="" />
+          <h2 class="peta">TAP TO VIEW</h2>
+        </a>
+
+        <a href="/shop.html" class="card-section secondary">
+          <img src="assets/images/kahara-5NiZHIvIP4M-unsplash.jpg" alt="" />
+          <h2 class="peta">TAP TO VIEW</h2>
+        </a>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2 class="section-title zetta" style="font-size: 2rem">NEW <span class="peta" style="font-weight: lighter">ARRIVALS</span></h2>
+          <ul class="section-links">
+            <li><a href="featured.html" class="giga">Featured</a></li>
+            <li><a href="shop.html/?sort=best" class="giga">Best Selling</a></li>
+          </ul>
+        </div>
+
+        <div class="section-images">
+          <a class="card">
+            <img src="assets/images/986305-Black_1.webp" alt="" />
+            <h5>MEN'S TOPS</h5>
+          </a>
+          <a class="card">
+            <img src="assets/images/986305-Black_1.webp" alt="" />
+            <h5>MEN'S BOTTOMS</h5>
+          </a>
+          <a class="card">
+            <img src="assets/images/986305-Black_1.webp" alt="" />
+            <h5>WOMEN'S TOPS</h5>
+          </a>
+          <a class="card">
+            <img src="assets/images/986305-Black_1.webp" alt="" />
+            <h5>WOMEN'S BOTTOMS</h5>
+          </a>
+        </div>
+      </section>
+
+      <section class="img-section secondary">
+        <img class="img-1" src="assets/images/bailey-alexander-pAYZOHbeZzM-unsplash.jpg" alt="" />
+        <a href="/shop" class="shop-2 zetta">SHOP NOW</a>
+      </section>
+    </main>
+  </body>
+  <script src="scripts/app.js"></script>
+</html>
