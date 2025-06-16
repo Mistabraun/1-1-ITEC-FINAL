@@ -126,3 +126,8 @@ body {
   background-color: #353535;
   color: white;
 }
+
+
+button:hover {
+  cursor: pointer;
+}

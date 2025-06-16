@@ -118,6 +118,10 @@ nav.active {
   background-color: rgba(0, 0, 0, 90%);
 }
 
+nav.active[color="white"] {
+  background-color: white;
+}
+
 nav img {
   height: 2rem;
   width: 2rem;
@@ -199,6 +203,7 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .search-wrapper img {
