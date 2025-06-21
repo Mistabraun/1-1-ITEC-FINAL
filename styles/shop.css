@@ -3,7 +3,7 @@ body {
 }
 
 .main-wrapper {
-  padding: 6rem 2rem;
+  padding: 6rem 2vw 2vw;
   display: flex;
   gap: 5rem;
 }
@@ -15,7 +15,7 @@ body {
 .filters {
   flex: 15rem;
   border: solid #d9d9d9 1px;
-  padding: 2rem;  
+  padding: 2rem;
   border-radius: 5px;
 
   display: flex;
@@ -46,16 +46,14 @@ span {
   width: 20rem;
 }
 
-.search-wrapper .search{
+.search-wrapper .search {
   color: black;
   border: solid #d9d9d9 1px;
 }
 
-
 .transparent {
   background-color: transparent;
 }
-
 
 .products-header {
   display: flex;
@@ -78,29 +76,46 @@ span {
   font-family: "Lexend Deca";
 }
 
-.products-body{
+.products-body {
   width: 100%;
   height: auto;
-  gap: 1rem 3rem;
+  gap: 1rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  /* grid-template-columns: repeat(auto-fit, calc(25% - 0.8rem)); */
+  /* justify-content: center; */
   margin-top: 20px;
-  
 }
 
 .card {
-   width: 100%;
-   padding: 1rem;
-   border: solid #d9d9d9 1px;
-   border-radius: 10px;
-   text-align: center;
+  width: fit-content;
+  height: fit-content;
+  border: solid black 1px;
+  padding: 10px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+
+  color: black;
 }
 
 .card-image {
   width: 100%;
+  height: 100%;
+
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
 }
 
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* align-items: center; */
+  margin-top: 0.5rem;
+}
+
+.card-description h4 {
+  font-weight: lighter;
+}
