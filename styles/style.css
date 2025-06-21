@@ -215,6 +215,7 @@ nav img {
 
 .search-wrapper button img {
   width: 100%;
+  filter: invert(1);
 }
 
 .search-wrapper button:hover {
