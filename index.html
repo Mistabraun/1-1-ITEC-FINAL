@@ -36,11 +36,14 @@
           <li>
             <a href="/login.html"><img src="assets/logo/user.svg" alt="" /></a>
           </li>
-          <li>
-            <a href=""><img src="assets/logo/heart.svg" alt="" /></a>
-          </li>
+          <!-- <li>
+            <a href=""><img src="assets/logo/shopping_cart_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="" /></a>
+          </li> -->
           <li>
             <a href="/shop.html"><img src="assets/logo/shop.svg" alt="" /></a>
+          </li>
+          <li>
+            <button><img src="assets/logo/shopping_cart_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="" /></button>
           </li>
         </ul>
       </nav>
@@ -66,41 +69,21 @@
           <li><a href="" class="last">VIEW ALL</a></li>
         </ul>
       </div>
-
-      <!-- 
-      <div class="sidebar-bg">
-        <div class="sidebar">
-          
-        </div>
-      </div> -->
-
-      <!-- <div class="sidebar" id="sidebar">
-        <div class="sidebar-header sidebar-bg" id="sidebar-bg">
-          <button id="sidebar-open"><img src="assets/logo/exit.svg" alt="" /></button>
-          <input class="search" type="text" placeholder="SEARCH" />
-        </div>
-        <ul class="sidebar-list sidebar-bg" id="sidebar-bg">
-          <li><a href="">NEW ARRIVALS</a></li>
-          <li><a href="">TOPS</a></li>
-          <li><a href="">JACKET</a></li>
-          <li><a href="">BOTTOMS</a></li>
-          <li><a href="">ACCESSORIES</a></li>
-          <li><a href="">FOOTWEAR</a></li>
-          <li><a href="" class="last">VIEW ALL</a></li>
-        </ul>
-      </div> -->
     </header>
 
     <main>
-      <!-- img-section naming sucks -->
-      <section class="img-section">
-        <img class="img-1" src="assets/images/sasha-lebedeva-VwGcsgeM-YM-unsplash.png" alt="" />
+      <section class="img-section" id="carousel">
+        <div class="carousel-images" id="carousel-images">
+          <img class="img-1" id="carousel-item" src="assets/images/sasha-lebedeva-VwGcsgeM-YM-unsplash.png" alt="" />
+          <img class="img-1" id="carousel-item" src="assets/images/pexels-rfera-432059.jpg" alt="" />
+          <img class="img-1" id="carousel-item" src="assets/images/adele-shafiee-kfcbzX6oNlA-unsplash.jpg" alt="" />
+        </div>
 
         <div class="shop-1">
           <a class="zetta" href="/shop.html">SHOP NOW</a>
-          <div class="dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
+          <div class="carousel-buttons" id="carousel-buttons">
+            <!-- <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span> -->
           </div>
         </div>
       </section>

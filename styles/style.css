@@ -348,7 +348,29 @@ nav img {
   gap: 1rem;
 }
 
-.dot {
+/* SLIDERS */
+
+.carousel-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-images::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-images img {
+  transition: transform 1s;
+}
+
+.carousel-images > img {
+  scroll-snap-align: start;
+}
+
+.carousel-buttons span {
   cursor: pointer;
   height: 0.5rem;
   width: 0.5rem;
@@ -359,18 +381,19 @@ nav img {
   transition: background-color 0.6s ease;
 }
 
-.dot.active {
+.carousel-buttons span.active {
   background-color: black;
 }
 
-.dots {
+.carousel-buttons {
   text-align: center;
   justify-content: center;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   background-color: rgba(188, 188, 188, 50%);
-  width: 3rem;
-  border-radius: 30px;
+  /* width: 3rem; */
+  /* width: auto; */
+  border-radius: 50px;
   gap: 0.3rem;
 }
 
@@ -466,7 +489,8 @@ nav img {
   background-color: rgba(32, 29, 29, 0.9);
 }
 
-/* Footer */
+/* FOOTER */
+
 .footer {
   position: sticky;
   width: 100%;
