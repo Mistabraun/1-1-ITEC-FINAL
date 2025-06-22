@@ -15,12 +15,7 @@
       </div>
     </div>
 
-    <div class="loader" id="loader">
-      <div class="wrapper">
-        <div class="spinner"></div>
-        <h1 class="zetta">LOADING</h1>
-      </div>
-    </div>
+    <div class="black-background" id="black-background"></div>
 
     <header>
       <nav id="navigation">
@@ -34,16 +29,14 @@
 
         <ul class="nav-links">
           <li>
-            <a href="/login.html"><img src="assets/logo/user.svg" alt="" /></a>
+            <a href="/login.html"><img src="assets/logo/user.svg" alt="User" /></a>
           </li>
-          <!-- <li>
-            <a href=""><img src="assets/logo/shopping_cart_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="" /></a>
-          </li> -->
+
           <li>
-            <a href="/shop.html"><img src="assets/logo/shop.svg" alt="" /></a>
+            <a href="/shop.html"><img src="assets/logo/shop.svg" alt="Shop" /></a>
           </li>
           <li>
-            <button><img src="assets/logo/shopping_cart_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="" /></button>
+            <button id="cart-view"><img src="assets/logo/cart-2.svg" alt="Cart" style="filter: invert(1)" /></button>
           </li>
         </ul>
       </nav>
@@ -68,6 +61,38 @@
           <li><a href="">FOOTWEAR</a></li>
           <li><a href="" class="last">VIEW ALL</a></li>
         </ul>
+      </div>
+
+      <div class="sidebar" id="sidebar-cart" open="cart-view" close="sidebar-cart-close" target="right">
+        <div class="sidebar-header">
+          <h2>CART</h2>
+          <button id="sidebar-cart-close"><img src="assets/logo/exit.svg" alt="" /></button>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="cart-item">
+            <div class="cart-header">
+              <h6 class="exa">Graphic Cropped Shirt</h6>
+              <button class="close"><img src="assets/logo/exit.svg" alt="" /></button>
+            </div>
+            <div class="cart-body">
+              <div class="cart-count">
+                <button class="cart-button">-</button>
+                <span class="cart-count exa">1</span>
+                <button class="cart-button">+</button>
+              </div>
+              <span class="price exa" id="cart-price">₱549.00</span>
+            </div>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <div class="header deca">
+            <h4 class="exa">TOTAL</h4>
+            <span>₱100.00</span>
+          </div>
+          <span class="description deca">Shipping and discount codes are calculated at checkout.</span>
+          <button class="checkout deca">Check out</button>
+        </div>
       </div>
     </header>
 

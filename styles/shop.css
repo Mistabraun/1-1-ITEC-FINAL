@@ -91,7 +91,7 @@ span {
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-template-columns: repeat(auto-fit, calc(25% - 0.8rem)); */
   /* justify-content: center; */
   margin-top: 20px;
@@ -101,6 +101,10 @@ span {
   border: solid black 1px;
   border-right-width: 2px;
   border-bottom-width: 2px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  /* background-size: cover; */
 }
 
 .card {
@@ -174,19 +178,6 @@ span {
     z-index: 101;
     transition: all 0.5s ease-in-out;
     overflow-y: scroll;
-  }
-
-  .black-background {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-  }
-
-  .black-background.active {
-    display: block;
   }
 
   .filters.active {

@@ -27,8 +27,10 @@ function setBlackBackground(active) {
 function initializeSidebar(id) {
   let sidebar = document.getElementById(id);
   if (!sidebar) {
+    console.log(id, " sidebbar doesn't exist");
     return;
   }
+
   let open = document.getElementById(sidebar.getAttribute("open"));
   let close = document.getElementById(sidebar.getAttribute("close"));
 
@@ -182,3 +184,4 @@ document.addEventListener("scroll", debounce(storeScroll));
 storeScroll();
 initializeSidebar("side-bar-filter");
 carousel();
+initializeSidebar("sidebar-cart");
