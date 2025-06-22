@@ -152,14 +152,11 @@ span {
   margin-bottom: 2rem;
 }
 
-.filters .exit button {
-}
-
 .filters .exit img {
   width: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .mobile-filter {
     display: flex;
   }

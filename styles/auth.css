@@ -139,6 +139,11 @@ body {
   color: white;
 }
 
+.login button:hover,
+.login a:hover {
+  opacity: 0.9;
+}
+
 button:hover {
   cursor: pointer;
 }
