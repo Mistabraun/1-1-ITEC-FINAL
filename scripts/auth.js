@@ -23,10 +23,16 @@ const register = (user, password) => {
     return true
 }
 
-const onError = () => { 
+const onError = (message, form) => { 
     email.focus()
-    email.value = ""
-    password.value = ""
+
+    if (message) { 
+        error.innerText = message
+    }
+
+    if (form) { 
+        form.reset()
+    }
     error.style.display = "inline"
 }
 
@@ -38,7 +44,7 @@ if (loginForm) {
         if (authenticate(email.value, password.value)) {
             window.location = "/"
         } else {
-            onError()
+            onError("The password you’ve entered is incorrect.")
             // email.classList.add("error")
             // password.classList.add("error")
         }
@@ -51,9 +57,12 @@ if (registerForm) {
 
     registerForm.addEventListener("submit", (event) => {
         event.preventDefault()
-        if (password.value !== verifyPassword.value) {
-            onError()
-            verifyPassword.value = ""
+        let passwordValue = password.value
+
+        if (passwordValue !== verifyPassword.value) {
+            onError("The password you’ve entered does not match.")
+        } else if (passwordValue.length <= 0) {
+            onError("The password must be atleast 8 characters long.")
         } else { 
             register(email.value, password.value)
             window.location = "/"

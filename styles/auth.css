@@ -68,6 +68,18 @@ body {
   color: rgba(0, 0, 0, 50%);
 }
 
+@media (max-width: 740px) {
+  .login img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-main {
+    width: 100%;
+  }
+}
+
 .error {
   color: red;
   display: none;
@@ -126,7 +138,6 @@ body {
   background-color: #353535;
   color: white;
 }
-
 
 button:hover {
   cursor: pointer;

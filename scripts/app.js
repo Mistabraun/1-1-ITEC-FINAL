@@ -1,5 +1,5 @@
 const sidebar = document.getElementById("sidebar") 
-
+let background = document.getElementById("black-background")
 var opened = false
 
 const setActive = (active) => { 
@@ -12,6 +12,45 @@ const setActive = (active) => {
     }
     
 }
+
+function setBlackBackground(active) { 
+    
+    if (!background) { 
+        return
+    }
+    if (active) {
+        background.classList.add("active")
+    } else { 
+        background.classList.remove("active")
+    }
+}
+
+// Todo : Gawin lahat to sa magiging sidebar.
+function initializeSidebar(id) {
+    let sidebar = document.getElementById(id)
+    if (!sidebar) { 
+        return
+    }
+    let open = document.getElementById(sidebar.getAttribute("open"))
+    let close = document.getElementById(sidebar.getAttribute("close"))
+
+    open.addEventListener("click", function () { 
+        sidebar.classList.add("active")
+        setBlackBackground(true)
+    })
+
+    function onClose() { 
+        sidebar.classList.remove("active")
+        setBlackBackground(false)
+    }
+
+    close.addEventListener("click", onClose)
+    if (background) { 
+        background.addEventListener("click", onClose)
+    }
+  
+}
+
 
 const sidebarOpen = document.getElementById("sidebar-open")
 const sidebarClose = document.getElementById("sidebar-close")
@@ -75,7 +114,7 @@ const debounce = (fn) => {
 // so we can use it in our stylesheets
 const storeScroll = () => {
     
-    if (window.scrollY > 100) {
+    if (window.scrollY > 10) {
         document.getElementById("navigation").classList.add("active")
     } else { 
         document.getElementById("navigation").classList.remove("active")
@@ -87,3 +126,4 @@ document.addEventListener('scroll', debounce(storeScroll));
 
 // Update scroll position for first time
 storeScroll();
+initializeSidebar("side-bar-filter")
